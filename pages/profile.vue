@@ -1,8 +1,6 @@
 <template>
     <b-container>
-        <b-navbar toggleable="lg" type="dark" variant="info">
-            <b-navbar-brand href="/profile">[自分の名前]のページ</b-navbar-brand>
-        </b-navbar>
+        <myheader></myheader>
         <h1>プロフィール情報</h1>
         <b-card img-src="https://placekitten.com/1000/300" img-alt="Card image" img-top>
             <b-card-text>
@@ -13,3 +11,12 @@
         <b-link to="/info/school">学校情報</b-link>
     </b-container>
 </template>
+
+<script>
+import myheader from '~/components/myheader'
+export default {
+    components: {
+        myheader,
+    }
+}
+</script>

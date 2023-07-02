@@ -1,8 +1,15 @@
 <template>
     <b-container>
-        <b-navbar toggleable="lg" type="dark" variant="info">
-            <b-navbar-brand href="/profile">[自分の名前]のページ</b-navbar-brand>
-        </b-navbar>
+        <myheader></myheader>
         <p>私の年齢は[]歳です。</p>
     </b-container>
 </template>
+
+<script>
+import myheader from '~/components/myheader'
+export default {
+    components: {
+        myheader,
+    }
+}
+</script>
